@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Clone repository
-      run: git clone https://github.com/tao1996/termux-app ./
+      run: git clone https://github.com/tao1996/termux-app.git ./
     - name: Build
       run: |
         cd termux-app
