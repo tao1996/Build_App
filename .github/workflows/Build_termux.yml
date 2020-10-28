@@ -9,9 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Clone repository
-      run: git clone https://github.com/pulque/termux-git-app ./
+      run: git clone https://github.com/Ujjwal-gaba/Latin-Translator ./
     - name: Build
-      run: ./gradlew build
+      run: ./gradlew assembleDebug
     - name: Store generated APK file
       uses: actions/upload-artifact@v1
       with:
