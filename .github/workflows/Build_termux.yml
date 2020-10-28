@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Clone repository
-      run: git clone https://github.com/Ujjwal-gaba/Latin-Translator ./
+      run: git clone https://github.com/termux/termux-styling ./
     - name: Build
       run: ./gradlew assembleDebug
     - name: Store generated APK file
