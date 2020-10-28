@@ -1,4 +1,4 @@
-name: Build Termux App
+name: Build App
 on: 
    workflow_dispatch:
      branches: [ master ]
@@ -11,9 +11,10 @@ jobs:
     - name: Clone repository
       run: git clone https://github.com/termux/termux-styling ./
     - name: Build
-      run: ./gradlew assembleDebug
+      run: |
+        ./gradlew assembleDebug
     - name: Store generated APK file
       uses: actions/upload-artifact@v1
       with:
-        name: termux-app
+        name: app
         path: ./app/build/outputs/apk/debug/app-debug.apk
