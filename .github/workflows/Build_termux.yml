@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Clone repository
-      run: git clone https://github.com/tao1996/termux-app ./
+      run: git clone https://github.com/pulque/termux-git-app ./
     - name: Build
       run: |
         #添加中文汉化
