@@ -11,7 +11,7 @@ jobs:
     - name: Clone repository
       run: git clone https://github.com/pulque/termux-git-app ./
     - name: Build
-      run: ./gradlew assembleDebug
+      run: ./gradlew build
     - name: Store generated APK file
       uses: actions/upload-artifact@v1
       with:
