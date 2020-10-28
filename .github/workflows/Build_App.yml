@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Clone repository
-      run: git clone https://github.com/termux/termux-styling ./
+      run: git clone https://github.com/tao1996/My-Terminal-Emulator ./
     - name: Build
       run: |
         ./gradlew assembleDebug
