@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Clone repository
-      run: git clone https://github.com/tao1996/My-Terminal-Emulator ./
+      run: git clone https://github.com/bingduoduo1/bingduoduo ./
     - name: Build
       run: |
         ./gradlew assembleDebug
