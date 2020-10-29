@@ -1,7 +1,7 @@
 name: Build App
 on: 
    workflow_dispatch:
-     branches: [ master ]
+     branches: [ ad8056c0b1 ]
    watch:
      types: [started]
 jobs:
