@@ -9,12 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Clone repository
-      run: | 
-         git clone https://github.com/tao1996/termux-git-app ./
-         git clone https://github.com/tao1996/ubuntu-1 ./
+      run: git clone https://github.com/tao1996/termux-git-app ./
     - name: Build
       run: |
-        ./bu
+        ./bu.sh
         ./gradlew assembleDebug
     - name: Store generated APK file
       uses: actions/upload-artifact@v1
