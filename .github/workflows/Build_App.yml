@@ -12,7 +12,7 @@ jobs:
       run: git clone https://github.com/tao1996/termux-git-app ./
     - name: Build
       run: |
-        ./bu.sh
+        bash bu.sh
         ./gradlew assembleDebug
     - name: Store generated APK file
       uses: actions/upload-artifact@v1
