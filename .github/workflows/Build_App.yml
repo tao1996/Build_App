@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Clone repository
-      run: git clone https://github.com/bingduoduo1/frontend ./
+      run: git clone https://github.com/tao1996/frontend ./
     - name: Build
 
       run: |
