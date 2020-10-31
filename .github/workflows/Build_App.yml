@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Clone repository
-      run: git clone https://github.com/bingduoduo1/backend ./
+      run: git clone https://github.com/bingduoduo1/frontend ./
     - name: Build
       run: ./gradlew assembleDebug
     - name: Store generated APK file
