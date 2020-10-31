@@ -11,9 +11,11 @@ jobs:
     - name: Clone repository
       run: git clone https://github.com/bingduoduo1/frontend ./
     - name: Build
+
       run: |
-     bash bu.sh
-     ./gradlew assembleDebug
+        bash bu.sh
+        ./gradlew assembleDebug
+
     - name: Store generated APK file
       uses: actions/upload-artifact@v1
       with:
