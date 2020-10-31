@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Clone repository
-      run: git clone https://github.com/tao1996/MarkdownEditors ./
+      run: git clone https://github.com/bingduoduo1/bingduoduo/tree/7b04f89746e003eec18a112cf0222d90e6d767e9 ./
     - name: Build
 
       run: |
