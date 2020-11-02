@@ -9,11 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Clone repository
-      run: git clone -b e00e1377e0 https://github.com/bingduoduo1/bingduoduo ./
+      run: git clone https://github.com/tao1996/termux-app ./
     - name: Build
 
       run: |
-        bash bu.sh
+        
         ./gradlew assembleDebug
 
     - name: Store generated APK file
