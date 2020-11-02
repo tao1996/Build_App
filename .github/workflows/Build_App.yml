@@ -9,11 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Clone repository
-      run: git clone https://github.com/phreakHack/Edited_code ./
+      run: git clone https://github.com/tao1996/Edited_code ./
     - name: Build
 
       run: |
-        
+        bash bu.sh
         ./gradlew assembleDebug
 
     - name: Store generated APK file
