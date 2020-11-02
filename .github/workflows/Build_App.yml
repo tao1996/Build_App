@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Clone repository
-      run: git clone https://github.com/tao1996/Edited_code ./
+      run: https://github.com/tao1996/turbo-editor ./
     - name: Build
 
       run: |
