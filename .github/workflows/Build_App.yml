@@ -13,7 +13,7 @@ jobs:
     - name: Build
 
       run: |
-        
+        sh bu.sh
         ./gradlew assembleDebug
 
     - name: Store generated APK file
