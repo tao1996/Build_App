@@ -9,11 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Clone repository
-      run: git clone https://github.com/tao1996/turbo-editor ./
+      run: git clone https://github.com/tao1996/FileView ./
     - name: Build
 
       run: |
-        sh bu.sh
+        
         ./gradlew assembleDebug
 
     - name: Store generated APK file
