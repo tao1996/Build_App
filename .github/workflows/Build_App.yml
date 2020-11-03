@@ -9,10 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Clone repository
-      run: git clone https://github.com/tao1996/NextEditor/tree/master/NextEditor ./
+      run: git clone https://github.com/tao1996/NextEditor ./
   
     - name: Build
       run: |
+        cd NextEditor
         sudo chmod 777 gradlew
         ./gradlew build
 
