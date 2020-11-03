@@ -9,15 +9,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Clone repository
-      run: git clone https://github.com/tao1996/FileView ./
+      run: git clone https://github.com/tao1996/CodeEditor-1 ./
     - name: Build
 
       run: |
         sh bu.sh
-        ./gradlew
+        ./gradlew release
 
     - name: Store generated APK file
       uses: actions/upload-artifact@v1
       with:
         name: app
-        path: ./
+        path: ./app
