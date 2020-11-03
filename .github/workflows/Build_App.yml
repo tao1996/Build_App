@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Clone repository
-      run: git clone https://github.com/tao1996/FileView ./
+      run: git clone https://github.com/tao1996/NextEditor/tree/master/NextEditor ./
   
     - name: Build
       run: |
