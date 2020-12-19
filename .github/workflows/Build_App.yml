@@ -13,7 +13,6 @@ jobs:
   
     - name: Build
       run: |
-        cd NextEditor
         sudo chmod 777 gradlew
         ./gradlew build
 
