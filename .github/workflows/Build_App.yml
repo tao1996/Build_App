@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Clone repository
-      run: git clone https://github.com/SciFi1818/FileExplorer ./
+      run: git clone https://github.com/BCsl/MaterialFiles ./
   
     - name: Build
       run: |
