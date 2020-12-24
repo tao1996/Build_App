@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
     - name: Clone repository
-      run: git clone https://github.com/BCsl/MaterialFiles ./
+      run: git clone https://github.com/L-JINBIN/MaterialFileExplorer ./
   
     - name: Build
       run: |
