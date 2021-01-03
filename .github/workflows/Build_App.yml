@@ -14,7 +14,7 @@ jobs:
     - name: Build
       run: |
         sudo chmod 777 gradlew
-        ./gradlew assembleDebug
+        ./gradlew build
 
     - name: Store generated APK file
       uses: actions/upload-artifact@v1
