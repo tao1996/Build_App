@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
     - name: Clone repository
-      run: git clone https://github.com/tao1996/JavaCompile ./
+      run: git clone https://github.com/15885217712/eide ./
   
     - name: Build
       run: |
