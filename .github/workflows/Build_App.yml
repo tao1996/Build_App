@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
     - name: Clone repository
-      run: git clone https://github.com/15885217712/eide ./
+      run: git clone https://github.com/tao1996/termux-app ./
   
     - name: Build
       run: |
@@ -20,4 +20,4 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
         name: app
-        path: ./
+        path: ./app
