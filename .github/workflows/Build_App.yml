@@ -9,7 +9,11 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
     - name: Clone repository
-      run: git clone https://github.com/tao1996/termux-app ./
+      run: |
+        cd ~
+        sudo curl -sL ""https://codeload.github.com/termux/termux-app/zip/v0.65" > termux.zip
+        sudo unzip termux.zip
+        cd termux-app-0.65  
   
     - name: Build
       run: |
