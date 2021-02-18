@@ -11,7 +11,7 @@ jobs:
     - name: Clone repository
       run: |
         cd ~
-        sudo curl -sL ""https://codeload.github.com/termux/termux-app/zip/v0.65" > termux.zip
+        sudo curl -sL "https://codeload.github.com/termux/termux-app/zip/v0.65" > termux.zip
         sudo unzip termux.zip
         cd termux-app-0.65  
   
