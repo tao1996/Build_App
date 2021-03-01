@@ -13,6 +13,9 @@ jobs:
     
     - name: Build
       run: |
+        cd kernel_oneplus_msm8998
+        sudo rm -rf .git
+        cd ..
         sudo tar -czvf ./5t.tar.gz ./kernel_oneplus_msm8998
 
     - name: Store generated APK file
