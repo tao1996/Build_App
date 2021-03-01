@@ -9,15 +9,14 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
     - name: Clone repository
-      run: git clone https://github.com/tao1996/term ./
+      run: git clone -b 11 https://github.com/DerpFest-Devices/kernel_oneplus_msm8998 --depth 1
     
     - name: Build
       run: |
-        sudo chmod 777 gradlew
-        ./gradlew assembleDebug
+        sudo tar -czvf ./5t.tar.gz ./kernel_oneplus_msm8998
 
     - name: Store generated APK file
       uses: actions/upload-artifact@v1
       with:
         name: app
-        path: ./app
+        path: ./5t.tar.gz
