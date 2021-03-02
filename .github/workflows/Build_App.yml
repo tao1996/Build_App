@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
     - name: Clone repository
-      run: git clone --depth=1 -b master https://github.com/kdrag0n/proton-clang clang
+      run: git clone --depth=1 -b master https://github.com/kdrag0n/proton-clang kernel_oneplus_msm8998
     
     - name: Build
       run: |
