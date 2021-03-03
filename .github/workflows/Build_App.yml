@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
     - name: Clone repository
-      run: https://github.com/kdrag0n/aarch64-elf-gcc -b 9.x --depth=3 kernel_oneplus_msm8998
+      run: git clone https://github.com/kdrag0n/aarch64-elf-gcc -b 9.x --depth=3 kernel_oneplus_msm8998
     
     - name: Build
       run: |
