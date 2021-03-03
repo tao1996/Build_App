@@ -9,18 +9,18 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
     - name: Clone repository
-      run: git clone https://github.com/kdrag0n/arm-eabi-gcc -b 9.x --depth=3 gcc32
+      run: git clone https://github.com/kdrag0n/aarch64-elf-gcc -b 9.x --depth=3 gcc64
     
     - name: Build
       run: |
-        cd gcc32
-        git checkout 76c68effb613ff240ecad714f6c6f63368e91478
+        cd gcc64
+        git checkout 14e746a95f594cf841bdf8c2e6122c274da7f70b
         sudo rm -rf .git
         cd ..
-        sudo tar -czvf ./gcc32.tar.gz ./gcc32
+        sudo tar -czvf ./gcc64.tar.gz ./gcc64
 
     - name: Store generated APK file
       uses: actions/upload-artifact@v1
       with:
-        name: gcc32
-        path: ./gcc32.tar.gz
+        name: gcc64
+        path: ./gcc64.tar.gz
