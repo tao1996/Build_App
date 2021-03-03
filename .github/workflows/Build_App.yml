@@ -9,17 +9,18 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
     - name: Clone repository
-      run: git clone https://github.com/kdrag0n/arm-eabi-gcc -b 9.x --depth=3 kernel_oneplus_msm8998
+      run: git clone https://github.com/kdrag0n/arm-eabi-gcc -b 9.x --depth=3 gcc32
     
     - name: Build
       run: |
-        cd kernel_oneplus_msm8998
+        cd gcc32
+        git checkout 76c68effb613ff240ecad714f6c6f63368e91478
         sudo rm -rf .git
         cd ..
-        sudo tar -czvf ./5t.tar.gz ./kernel_oneplus_msm8998
+        sudo tar -czvf ./gcc32.tar.gz ./gcc32
 
     - name: Store generated APK file
       uses: actions/upload-artifact@v1
       with:
-        name: app
-        path: ./5t.tar.gz
+        name: gcc32
+        path: ./gcc32.tar.gz
